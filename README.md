@@ -4,7 +4,7 @@ This repository contains a notebook-based case study that uses synthetic outpati
 
 ## Repository Contents
 
-- `outpatient_clinic_or_case_study.ipynb`: main analysis notebook.
+- `Outpatient Clinic Patient-Flow and Staffing Optimisation.ipynb`: main analysis notebook.
 - `doctor_availability_synthetic.csv`: synthetic doctor capacity by clinic day and time block.
 - `patient_visits_synthetic.csv`: synthetic patient appointments, arrivals, consultation times, and no-show indicators.
 - `staffing_scenarios_synthetic.csv`: alternative staffing assignments used in the scenario comparison.
@@ -20,17 +20,34 @@ Install dependencies with:
 pip install -r requirements.txt
 ```
 
-## How to Run
+## Quick Start
 
-1. Install the dependencies.
-2. Start Jupyter:
+1. Clone or download this repository.
+2. Install dependencies:
+
+  ```bash
+  pip install -r requirements.txt
+  ```
+
+3. Start Jupyter:
 
    ```bash
    jupyter notebook
    ```
 
-3. Open `outpatient_clinic_or_case_study.ipynb`.
-4. Run the notebook from top to bottom.
+4. Open `Outpatient Clinic Patient-Flow and Staffing Optimisation.ipynb`.
+5. Run the notebook from top to bottom.
+
+## Input Data Files
+
+The notebook expects the following CSV files in the repository root:
+
+- `doctor_availability_synthetic.csv`
+- `patient_visits_synthetic.csv`
+- `staffing_scenarios_synthetic.csv`
+- `model_parameters_synthetic.csv`
+
+If you move files to another location, update the notebook file paths accordingly.
 
 ## Analysis Scope
 
@@ -133,3 +150,8 @@ This repository is useful as a compact case study for:
 
 - All data in this repository is synthetic.
 - The optimisation and simulation logic are intentionally lightweight and intended for case-study demonstration rather than production scheduling.
+- If Jupyter does not detect a Python kernel, run:
+
+  ```bash
+  python -m ipykernel install --user
+  ```
