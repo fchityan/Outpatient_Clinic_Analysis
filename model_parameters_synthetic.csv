@@ -1,0 +1,8 @@
+parameter,value,unit,notes
+doctor_cost_per_hour,120,SGD,Synthetic cost assumption for demonstration.
+waiting_time_penalty_per_patient_minute,2,SGD-equivalent,Synthetic service penalty used in objective function.
+overtime_penalty_per_minute,10,SGD-equivalent,Synthetic penalty for finishing after clinic hours.
+clinic_start_minute,480,minute of day,08:00.
+clinic_end_minute,1020,minute of day,17:00.
+registration_counter_count,1,counter,Registration capacity in simulation.
+service_level_target_p90_wait,45,minutes,Illustrative service-level target.

@@ -1,0 +1,6 @@
+scenario,08:00-10:00,10:00-12:00,13:00-15:00,15:00-17:00,description
+Baseline_2_Doctors_All_Day,2,2,2,2,Current-state baseline with two doctors throughout the day.
+Extra_3_Doctors_All_Day,3,3,3,3,Adds one doctor across all clinic blocks; strongest capacity but highest staffing cost.
+Peak_3_Doctors_Morning,3,3,2,2,Adds capacity only in morning peak blocks.
+Lean_Low_Demand_Afternoon,2,2,2,1,Reduces capacity in late afternoon to save cost; used as a stress-test.
+Balanced_Peak_Only,3,2,2,2,Adds one doctor only during the busiest early block.
